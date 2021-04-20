@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Display App</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"> 
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>Greetings & Salutations!</h1>
+        </div>
+        <div id="body">
+            <h3>Today is:</h3>
+                <p>{{ date_long }}</p>
+            <h3>In shorthand, the date is written as:</h3>
+                <p>{{ date }}</p>
+            <h3>In Europe, it is written as:</h3>
+                <p>{{ date_europe }}</p>
+            <h3>The current time is:</h3>
+                <p>{{ time }}</p>
+            <h3>Converted to "military time" it is:</h3>
+                <p>{{ military_time }}</p>
+        </div>
+    </div>
+</body>
+</html>
